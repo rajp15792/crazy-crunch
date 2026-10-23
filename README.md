@@ -94,7 +94,5 @@ You can deploy Crazy Crunch live on the internet with automatic HTTPS (required 
 ## 🔐 Owner Dashboard Credentials
 
 - **URL:** Open the app and click the **"Owner"** button in the header.
-- **Default Username:** `admin`
-- **Default Password:** `crunch@admin2026`
-
-*(You can modify these credentials in `server/seedData.js` or via environment variables).*
+- **Owner ID:** `Swarup`
+- **Owner Password:** `swarup@123`
