@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="goldGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full Bleed Square for Android adaptive masking -->
+  <rect width="512" height="512" fill="url(#bgGradMask)"/>
+
+  <!-- Center Graphic in safe inner 75% zone -->
+  <g transform="translate(256, 210) scale(0.85)">
+    <!-- Starburst Crunch Shape -->
+    <path d="M 0,-100 L 18,-82 L 50,-92 L 50,-60 L 82,-50 L 64,-22 L 96,0 L 64,22 L 82,50 L 50,60 L 50,92 L 18,82 L 0,100 L -18,82 L -50,92 L -50,60 L -82,50 L -64,22 L -96,0 L -64,-22 L -82,-50 L -50,-60 L -50,-92 L -18,-82 Z"
+          fill="url(#goldGradMask)" stroke="#9a3412" stroke-width="6" stroke-linejoin="round"/>
+    
+    <!-- Chakli Spiral -->
+    <path d="M 0,0 
+             A 14 14 0 0 1 14,14 
+             A 28 28 0 0 1 -14,28 
+             A 42 42 0 0 1 -42,-14 
+             A 56 56 0 0 1 14,-56
+             A 70 70 0 0 1 70,14" 
+          fill="none" stroke="#78350f" stroke-width="8" stroke-linecap="round"/>
+
+    <ellipse cx="-14" cy="-8" rx="3.5" ry="7" transform="rotate(30 -14 -8)" fill="#fff" opacity="0.95"/>
+    <ellipse cx="20" cy="20" rx="3.5" ry="7" transform="rotate(-40 20 20)" fill="#fff" opacity="0.95"/>
+  </g>
+
+  <!-- Typography safe area -->
+  <text x="256" y="375" text-anchor="middle" font-family="'Outfit', 'Impact', sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="3">
+    CRAZY
+  </text>
+  <text x="256" y="420" text-anchor="middle" font-family="'Outfit', 'Impact', sans-serif" font-weight="800" font-size="28" fill="#fed7aa" letter-spacing="6">
+    CRUNCH
+  </text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="plateGrad4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="85%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </radialGradient>
+    <radialGradient id="ladduGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#d97706"/>
+      <stop offset="90%" stop-color="#78350f"/>
+    </radialGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#7c2d12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#plateGrad4)"/>
+  <ellipse cx="200" cy="190" rx="145" ry="65" fill="#f8fafc" stroke="#fed7aa" stroke-width="4" filter="url(#shadow4)"/>
+
+  <!-- Laddu 1 (Left) -->
+  <g filter="url(#shadow4)" transform="translate(140, 165)">
+    <circle cx="0" cy="0" r="42" fill="url(#ladduGrad)"/>
+    <!-- Murmura grains texture -->
+    <ellipse cx="-15" cy="-15" rx="5" ry="2.5" transform="rotate(35 -15 -15)" fill="#fef9c3"/>
+    <ellipse cx="10" cy="-20" rx="5.5" ry="3" transform="rotate(-20 10 -20)" fill="#fef08a"/>
+    <ellipse cx="-8" cy="12" rx="6" ry="2.8" transform="rotate(65 -8 12)" fill="#fef9c3"/>
+    <ellipse cx="18" cy="8" rx="5" ry="2.5" transform="rotate(-45 18 8)" fill="#fef08a"/>
+    <ellipse cx="-24" cy="5" rx="5" ry="2.5" transform="rotate(10 -24 5)" fill="#fef08a"/>
+    <ellipse cx="5" cy="-2" rx="6" ry="3" transform="rotate(15 5 -2)" fill="#ffffff"/>
+  </g>
+
+  <!-- Laddu 2 (Right) -->
+  <g filter="url(#shadow4)" transform="translate(255, 168)">
+    <circle cx="0" cy="0" r="40" fill="url(#ladduGrad)"/>
+    <ellipse cx="-12" cy="-10" rx="5" ry="2.5" transform="rotate(-30 -12 -10)" fill="#fef9c3"/>
+    <ellipse cx="12" cy="-15" rx="5" ry="2.5" transform="rotate(40 12 -15)" fill="#fef08a"/>
+    <ellipse cx="0" cy="15" rx="5.5" ry="3" transform="rotate(-15 0 15)" fill="#fef9c3"/>
+    <ellipse cx="18" cy="5" rx="5" ry="2.5" transform="rotate(50 18 5)" fill="#fef08a"/>
+  </g>
+
+  <!-- Laddu 3 (Front Center) -->
+  <g filter="url(#shadow4)" transform="translate(198, 150)">
+    <circle cx="0" cy="0" r="48" fill="url(#ladduGrad)"/>
+    <ellipse cx="-18" cy="-18" rx="6" ry="3" transform="rotate(40 -18 -18)" fill="#fff"/>
+    <ellipse cx="15" cy="-22" rx="6" ry="3.2" transform="rotate(-25 15 -22)" fill="#fef9c3"/>
+    <ellipse cx="-10" cy="15" rx="6.5" ry="3" transform="rotate(70 -10 15)" fill="#fef9c3"/>
+    <ellipse cx="22" cy="12" rx="5.5" ry="2.8" transform="rotate(-40 22 12)" fill="#fef08a"/>
+    <ellipse cx="-28" cy="4" rx="5.5" ry="2.8" transform="rotate(15 -28 4)" fill="#fef08a"/>
+    <ellipse cx="2" cy="-2" rx="7" ry="3.5" transform="rotate(20 2 -2)" fill="#ffffff"/>
+    <ellipse cx="8" cy="25" rx="6" ry="3" transform="rotate(-10 8 25)" fill="#fde047"/>
+  </g>
+
+  <rect x="20" y="20" rx="8" width="125" height="28" fill="#ea580c"/>
+  <text x="82" y="39" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#ffffff" letter-spacing="0.5">MAMRA LADDU</text>
+</svg>

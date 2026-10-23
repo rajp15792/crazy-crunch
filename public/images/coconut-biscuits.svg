@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="plateGrad5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="85%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </radialGradient>
+    <linearGradient id="biscuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#7c2d12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#plateGrad5)"/>
+  <ellipse cx="200" cy="185" rx="145" ry="65" fill="#f8fafc" stroke="#fed7aa" stroke-width="4" filter="url(#shadow5)"/>
+
+  <!-- Biscuit 1 (Back left) -->
+  <g filter="url(#shadow5)" transform="translate(150, 165)">
+    <circle cx="0" cy="0" r="42" fill="url(#biscuitGrad)"/>
+    <!-- Scalloped edge -->
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- Coconut flakes -->
+    <path d="M -15,-15 L -10,-12 M 10,-20 L 15,-18 M -5,10 L 0,14 M 15,10 L 20,8 M -20,5 L -15,2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Biscuit 2 (Back right) -->
+  <g filter="url(#shadow5)" transform="translate(250, 168)">
+    <circle cx="0" cy="0" r="40" fill="url(#biscuitGrad)"/>
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <path d="M -10,-12 L -5,-8 M 8,-15 L 14,-14 M -2,12 L 4,15 M 12,5 L 18,2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Biscuit 3 (Front Center) -->
+  <g filter="url(#shadow5)" transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="48" fill="url(#biscuitGrad)"/>
+    <circle cx="0" cy="0" r="43" fill="none" stroke="#78350f" stroke-width="2" stroke-dasharray="5 3"/>
+    <!-- Flakes of coconut -->
+    <path d="M -20,-18 L -12,-14 M 15,-22 L 24,-18 M -10,12 L -2,18 M 18,12 L 26,10 M -25,2 L -18,-2 M 0,-4 L 8,0 M -8,-8 L -2,-4" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="8" r="2" fill="#fff"/>
+    <circle cx="-12" cy="-6" r="2" fill="#fff"/>
+    <circle cx="12" cy="-8" r="2" fill="#fff"/>
+  </g>
+
+  <rect x="20" y="20" rx="8" width="150" height="28" fill="#ea580c"/>
+  <text x="95" y="39" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#ffffff" letter-spacing="0.5">COCONUT BISCUITS</text>
+</svg>

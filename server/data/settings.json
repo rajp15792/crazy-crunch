@@ -1,0 +1,12 @@
+{
+  "storeName": "Crazy Crunch",
+  "tagline": "Crunch in Every Munch!",
+  "phone": "9876543210",
+  "whatsappNumber": "919876543210",
+  "upiId": "crazycrunch@upi",
+  "minOrderForFreeDelivery": 299,
+  "deliveryCharge": 30,
+  "currency": "₹",
+  "ownerUsername": "admin",
+  "ownerPassword": "crunch@admin2026"
+}

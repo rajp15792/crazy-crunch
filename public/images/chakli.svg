@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="85%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </radialGradient>
+    <linearGradient id="chakliGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="60%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="crispShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#7c2d12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#plateGrad)"/>
+
+  <!-- Serving Bowl / Slate -->
+  <ellipse cx="200" cy="180" rx="140" ry="70" fill="#f8fafc" stroke="#fed7aa" stroke-width="4" filter="url(#crispShadow)"/>
+  <ellipse cx="200" cy="178" rx="125" ry="60" fill="#ffedd5" opacity="0.6"/>
+
+  <!-- Chakli 1 (Main Crisp Spiral) -->
+  <g filter="url(#crispShadow)" transform="translate(190, 150)">
+    <!-- Spiked spiral outer rings -->
+    <path d="M 0,-40 C 30,-40 50,-10 40,20 C 30,50 -10,50 -35,30 C -60,10 -45,-30 -15,-45 C 20,-60 65,-30 65,15 C 65,55 10,75 -30,65 C -75,55 -85,-10 -55,-55 C -20,-90 50,-80 80,-40" 
+          fill="none" stroke="url(#chakliGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 3"/>
+    <!-- Sesame sprinkles -->
+    <circle cx="10" cy="-15" r="2.5" fill="#fff"/>
+    <circle cx="-20" cy="5" r="2.5" fill="#fff"/>
+    <circle cx="25" cy="15" r="2.5" fill="#fff"/>
+    <circle cx="-10" cy="25" r="2.5" fill="#fff"/>
+  </g>
+
+  <!-- Chakli 2 (Accent) -->
+  <g transform="translate(250, 175) scale(0.65)" opacity="0.95">
+    <path d="M 0,-30 C 20,-30 40,-10 30,15 C 20,40 -10,40 -25,20 C -40,5 -30,-20 -10,-35 C 15,-45 50,-20 50,10 C 50,40 10,55 -20,50" 
+          fill="none" stroke="url(#chakliGrad)" stroke-width="11" stroke-linecap="round" stroke-dasharray="12 3"/>
+    <circle cx="5" cy="-5" r="2" fill="#fff"/>
+    <circle cx="-10" cy="10" r="2" fill="#fff"/>
+  </g>
+
+  <!-- Snack Label Tag -->
+  <rect x="20" y="20" rx="8" width="100" height="28" fill="#ea580c"/>
+  <text x="70" y="39" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#ffffff" letter-spacing="0.5">CRISPY CHAKLI</text>
+</svg>
