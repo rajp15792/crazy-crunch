@@ -46,8 +46,9 @@ async function runTests() {
 
   // 2. Verify Owner Authentication
   console.log('\n--- Test Suite 2: Owner Panel Security & Auth ---');
-  assert(db.verifyOwnerPassword('wrongpassword') === false, 'Invalid owner password rejected');
-  assert(db.verifyOwnerPassword('crunch@admin2026') === true, 'Correct owner password verified');
+  assert(db.verifyOwnerCredentials('wronguser', 'wrongpassword') === false, 'Invalid owner username/password rejected');
+  assert(db.verifyOwnerCredentials('Swarup', 'wrongpassword') === false, 'Correct username with wrong password rejected');
+  assert(db.verifyOwnerCredentials('Swarup', 'swarup@123') === true, 'Correct credentials (Swarup / swarup@123) verified');
 
   const settings = db.getSettings();
   assert(settings.ownerPassword === undefined, 'Owner password NEVER exposed in public settings');

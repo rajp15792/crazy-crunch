@@ -110,9 +110,9 @@ app.post('/api/admin/login', (req, res) => {
     return res.status(400).json({ success: false, error: 'Username and password are required.' });
   }
 
-  const isValid = db.verifyOwnerPassword(password);
-  if (!isValid || username.trim().toLowerCase() !== 'admin') {
-    return res.status(401).json({ success: false, error: 'Invalid owner username or password.' });
+  const isValid = db.verifyOwnerCredentials(username, password);
+  if (!isValid) {
+    return res.status(401).json({ success: false, error: 'Invalid owner ID or password.' });
   }
 
   res.json({

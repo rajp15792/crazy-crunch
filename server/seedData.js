@@ -101,7 +101,6 @@ export const initialSettings = {
   minOrderForFreeDelivery: 299,
   deliveryCharge: 30,
   currency: "₹",
-  ownerUsername: "admin",
-  // Default owner password hash or key
-  ownerPassword: "crunch@admin2026"
+  ownerUsername: "Swarup",
+  ownerPassword: "swarup@123"
 };

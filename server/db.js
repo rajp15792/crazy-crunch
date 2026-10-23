@@ -225,6 +225,13 @@ export const db = {
     return settings.ownerPassword === inputPassword;
   },
 
+  verifyOwnerCredentials(inputUsername, inputPassword) {
+    const settings = readJSON(SETTINGS_FILE, initialSettings);
+    const validUsername = (settings.ownerUsername || 'Swarup').trim().toLowerCase();
+    const cleanInputUsername = (inputUsername || '').trim().toLowerCase();
+    return cleanInputUsername === validUsername && settings.ownerPassword === inputPassword;
+  },
+
   updateSettings(updates) {
     const current = readJSON(SETTINGS_FILE, initialSettings);
     const updated = { ...current, ...updates };

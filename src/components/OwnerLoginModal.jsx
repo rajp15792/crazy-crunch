@@ -4,8 +4,8 @@ import { Lock, X, AlertCircle, Loader2 } from 'lucide-react';
 export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
   if (!isOpen) return null;
 
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('crunch@admin2026');
+  const [username, setUsername] = useState('Swarup');
+  const [password, setPassword] = useState('swarup@123');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -48,7 +48,7 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
             </div>
             <div>
               <h3 className="text-base font-bold text-slate-900 leading-tight">Owner Authentication</h3>
-              <p className="text-[11px] text-slate-500">Crazy Crunch Store Management</p>
+              <p className="text-[11px] text-slate-500">Secure Product & Store Management</p>
             </div>
           </div>
           <button
@@ -69,11 +69,12 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-              Username
+              Owner ID
             </label>
             <input
               type="text"
               required
+              placeholder="e.g. Swarup"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white"
@@ -87,17 +88,18 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
             <input
               type="password"
               required
+              placeholder="Enter owner password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white"
             />
           </div>
 
-          {/* Quick Demo Hint */}
+          {/* Secure Hint */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-2.5 text-[11px] text-amber-900">
-            <div className="font-semibold mb-0.5">Demo Owner Credentials:</div>
-            <div>Username: <code className="font-mono font-bold">admin</code></div>
-            <div>Password: <code className="font-mono font-bold">crunch@admin2026</code></div>
+            <div className="font-semibold mb-0.5">Secure Owner Access:</div>
+            <div>Owner ID: <code className="font-mono font-bold">Swarup</code></div>
+            <div>Password: <code className="font-mono font-bold">swarup@123</code></div>
           </div>
 
           <div className="pt-2">
