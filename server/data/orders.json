@@ -1,5 +1,63 @@
 [
   {
+    "id": "ord-1792784072908",
+    "orderRef": "CC-2026-5994",
+    "customer": {
+      "name": "Verification Bot",
+      "phone": "9876543210",
+      "address": "123 Test Street, MG Road, Pune",
+      "pincode": "411001",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Confirmed",
+    "createdAt": "2026-10-23T19:34:32.908Z"
+  },
+  {
+    "id": "ord-1792783649075",
+    "orderRef": "CC-2026-6684",
+    "customer": {
+      "name": "Test Customer",
+      "phone": "9876543210",
+      "address": "Pune Flat 101",
+      "pincode": "411001",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 1,
+        "total": 60,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 60,
+    "deliveryCharge": 30,
+    "grandTotal": 90,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Confirmed",
+    "createdAt": "2026-10-23T19:27:29.075Z"
+  },
+  {
     "id": "ord-1792783484647",
     "orderRef": "CC-2026-6731",
     "customer": {

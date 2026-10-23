@@ -28,6 +28,7 @@ export default function App() {
   // Filters & Search
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [sortBy, setSortBy] = useState('featured');
 
   // Modals & Drawers
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -242,18 +243,27 @@ export default function App() {
     }
   ];
 
-  // Filtered products
-  const filteredProducts = products.filter((p) => {
-    const matchesCategory =
-      selectedCategory === 'all' || p.category === selectedCategory;
-    const matchesSearch =
-      !searchQuery.trim() ||
-      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (p.description && p.description.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (p.weight && p.weight.toLowerCase().includes(searchQuery.toLowerCase()));
+  // Filtered and sorted products
+  const filteredProducts = products
+    .filter((p) => {
+      const matchesCategory =
+        selectedCategory === 'all' || p.category === selectedCategory;
+      const q = searchQuery.toLowerCase().trim();
+      const matchesSearch =
+        !q ||
+        p.name.toLowerCase().includes(q) ||
+        (p.category && p.category.toLowerCase().includes(q)) ||
+        (p.description && p.description.toLowerCase().includes(q)) ||
+        (p.weight && p.weight.toLowerCase().includes(q));
 
-    return matchesCategory && matchesSearch;
-  });
+      return matchesCategory && matchesSearch;
+    })
+    .sort((a, b) => {
+      if (sortBy === 'price-asc') return a.price - b.price;
+      if (sortBy === 'price-desc') return b.price - a.price;
+      if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
+      return 0; // featured default
+    });
 
   const cartTotalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -312,9 +322,13 @@ export default function App() {
           onAddToCart={handleAddToCart}
           onUpdateQuantity={handleUpdateQuantity}
           searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
           onClearFilters={() => {
             setSearchQuery('');
             setSelectedCategory('all');
+            setSortBy('featured');
           }}
         />
 

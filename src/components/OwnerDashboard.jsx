@@ -16,7 +16,9 @@ import {
   CheckCircle,
   Truck,
   Clock,
-  ChevronDown
+  ChevronDown,
+  Search,
+  X
 } from 'lucide-react';
 import ProductModal from './ProductModal';
 
@@ -32,6 +34,8 @@ export default function OwnerDashboard({
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
   const [orderFilter, setOrderFilter] = useState('All');
+  const [productSearch, setProductSearch] = useState('');
+  const [orderSearch, setOrderSearch] = useState('');
 
   // Product modal state
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
@@ -160,8 +164,29 @@ export default function OwnerDashboard({
     }
   };
 
-  const filteredOrders =
-    orderFilter === 'All' ? orders : orders.filter((o) => o.status === orderFilter);
+  const filteredProducts = products.filter((p) => {
+    const q = productSearch.toLowerCase().trim();
+    if (!q) return true;
+    return (
+      p.name.toLowerCase().includes(q) ||
+      (p.category && p.category.toLowerCase().includes(q)) ||
+      (p.weight && p.weight.toLowerCase().includes(q)) ||
+      (p.description && p.description.toLowerCase().includes(q))
+    );
+  });
+
+  const filteredOrders = orders.filter((o) => {
+    const matchesFilter = orderFilter === 'All' || o.status === orderFilter;
+    const q = orderSearch.toLowerCase().trim();
+    if (!matchesFilter) return false;
+    if (!q) return true;
+    return (
+      (o.orderRef && o.orderRef.toLowerCase().includes(q)) ||
+      (o.customer?.name && o.customer.name.toLowerCase().includes(q)) ||
+      (o.customer?.phone && o.customer.phone.includes(q)) ||
+      (o.customer?.address && o.customer.address.toLowerCase().includes(q))
+    );
+  });
 
   const statusColors = {
     Confirmed: 'bg-blue-100 text-blue-800 border-blue-200',
@@ -262,21 +287,44 @@ export default function OwnerDashboard({
         {/* TAB 1: PRODUCTS */}
         {activeTab === 'products' && (
           <div className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <h2 className="text-lg font-bold text-slate-900">Catalogue Management</h2>
                 <p className="text-xs text-slate-500">Edit snack names, demo prices, weights, stock, and publish status</p>
               </div>
-              <button
-                onClick={() => {
-                  setEditingProduct(null);
-                  setIsProductModalOpen(true);
-                }}
-                className="flex items-center gap-1.5 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold rounded-xl shadow-md shadow-orange-600/20 transition-all"
-              >
-                <Plus className="w-4 h-4" />
-                <span>Add Snack</span>
-              </button>
+
+              <div className="flex items-center gap-2.5">
+                {/* Search Product Bar */}
+                <div className="relative w-full sm:w-64">
+                  <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    type="text"
+                    placeholder="Search snacks..."
+                    value={productSearch}
+                    onChange={(e) => setProductSearch(e.target.value)}
+                    className="w-full pl-8 pr-7 py-1.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                  {productSearch && (
+                    <button
+                      onClick={() => setProductSearch('')}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-slate-400 hover:text-slate-600 rounded-full"
+                    >
+                      <X className="w-3 h-3" />
+                    </button>
+                  )}
+                </div>
+
+                <button
+                  onClick={() => {
+                    setEditingProduct(null);
+                    setIsProductModalOpen(true);
+                  }}
+                  className="flex items-center gap-1.5 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold rounded-xl shadow-md shadow-orange-600/20 transition-all shrink-0"
+                >
+                  <Plus className="w-4 h-4" />
+                  <span>Add Snack</span>
+                </button>
+              </div>
             </div>
 
             {/* Products Table / Cards */}
@@ -295,9 +343,16 @@ export default function OwnerDashboard({
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
-                    {products.map((p) => {
-                      const isLow = p.stock <= 5;
-                      const isOut = p.stock <= 0;
+                    {filteredProducts.length === 0 ? (
+                      <tr>
+                        <td colSpan="7" className="px-4 py-8 text-center text-slate-400 text-xs">
+                          No snacks found matching "{productSearch}"
+                        </td>
+                      </tr>
+                    ) : (
+                      filteredProducts.map((p) => {
+                        const isLow = p.stock <= 5;
+                        const isOut = p.stock <= 0;
 
                       return (
                         <tr key={p.id} className="hover:bg-slate-50/80 transition-colors">
@@ -372,7 +427,7 @@ export default function OwnerDashboard({
                           </td>
                         </tr>
                       );
-                    })}
+                    }))}
                   </tbody>
                 </table>
               </div>
@@ -389,21 +444,43 @@ export default function OwnerDashboard({
                 <p className="text-xs text-slate-500">Live order queue with status updates & WhatsApp contact</p>
               </div>
 
-              {/* Status Filter */}
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
-                {['All', 'Confirmed', 'Preparing', 'Out for Delivery', 'Delivered', 'Cancelled'].map((st) => (
-                  <button
-                    key={st}
-                    onClick={() => setOrderFilter(st)}
-                    className={`px-3 py-1 rounded-full text-xs font-bold transition-all whitespace-nowrap ${
-                      orderFilter === st
-                        ? 'bg-slate-900 text-white shadow-sm'
-                        : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
-                    }`}
-                  >
-                    {st}
-                  </button>
-                ))}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                {/* Search Order Bar */}
+                <div className="relative w-full sm:w-56">
+                  <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    type="text"
+                    placeholder="Search order ref, name, phone..."
+                    value={orderSearch}
+                    onChange={(e) => setOrderSearch(e.target.value)}
+                    className="w-full pl-8 pr-7 py-1.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  />
+                  {orderSearch && (
+                    <button
+                      onClick={() => setOrderSearch('')}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-slate-400 hover:text-slate-600 rounded-full"
+                    >
+                      <X className="w-3 h-3" />
+                    </button>
+                  )}
+                </div>
+
+                {/* Status Filter */}
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+                  {['All', 'Confirmed', 'Preparing', 'Out for Delivery', 'Delivered', 'Cancelled'].map((st) => (
+                    <button
+                      key={st}
+                      onClick={() => setOrderFilter(st)}
+                      className={`px-3 py-1 rounded-full text-xs font-bold transition-all whitespace-nowrap ${
+                        orderFilter === st
+                          ? 'bg-slate-900 text-white shadow-sm'
+                          : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                      }`}
+                    >
+                      {st}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 

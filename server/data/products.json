@@ -7,11 +7,11 @@
     "weight": "200 g",
     "description": "Traditional golden crunchy spiral snack crafted with roasted flours and delicate spices. Perfectly crisp tea-time companion.",
     "image": "/images/chakli.svg",
-    "stock": 45,
+    "stock": 44,
     "isPublished": true,
     "isDemoPrice": true,
     "createdAt": "2026-10-24T00:00:00.000Z",
-    "updatedAt": "2026-10-23T19:24:44.658Z"
+    "updatedAt": "2026-10-23T19:34:32.912Z"
   },
   {
     "id": "prod-2",
