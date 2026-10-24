@@ -1,0 +1,54 @@
+[
+  {
+    "id": "log-1792830958246-3pf4",
+    "timestamp": "2026-10-24T08:35:58.246Z",
+    "type": "RESTORE_ON_CANCEL",
+    "orderRef": "CC-2026-8336",
+    "productId": "demo-milk-toast",
+    "productName": "Milk Toast",
+    "unit": "packet",
+    "delta": 2,
+    "previousStock": 38,
+    "newStock": 40,
+    "reason": "Stock released: Order CC-2026-8336 cancelled"
+  },
+  {
+    "id": "log-1792830958197-pqhr",
+    "timestamp": "2026-10-24T08:35:58.197Z",
+    "type": "ORDER_DEDUCT",
+    "orderRef": "CC-2026-8336",
+    "productId": "demo-milk-toast",
+    "productName": "Milk Toast",
+    "unit": "packet",
+    "delta": -2,
+    "previousStock": 40,
+    "newStock": 38,
+    "reason": "Order CC-2026-8336 placed by Suresh More"
+  },
+  {
+    "id": "log-1792830957435-vq40",
+    "timestamp": "2026-10-24T08:35:57.435Z",
+    "type": "RESTORE_ON_CANCEL",
+    "orderRef": "CC-2026-6414",
+    "productId": "demo-milk-toast",
+    "productName": "Milk Toast",
+    "unit": "packet",
+    "delta": 2,
+    "previousStock": 38,
+    "newStock": 40,
+    "reason": "Stock released: Order CC-2026-6414 cancelled"
+  },
+  {
+    "id": "log-1792830957413-aaf9",
+    "timestamp": "2026-10-24T08:35:57.413Z",
+    "type": "ORDER_DEDUCT",
+    "orderRef": "CC-2026-6414",
+    "productId": "demo-milk-toast",
+    "productName": "Milk Toast",
+    "unit": "packet",
+    "delta": -2,
+    "previousStock": 40,
+    "newStock": 38,
+    "reason": "Order CC-2026-6414 placed by Ramesh Patil"
+  }
+]

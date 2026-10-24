@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="mcPlateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffdfa"/>
+      <stop offset="70%" stop-color="#fbf8f0"/>
+      <stop offset="100%" stop-color="#f3e8d2"/>
+    </radialGradient>
+    <radialGradient id="cookieGrad" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="85%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </radialGradient>
+    <filter id="mcShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#451a03" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#mcPlateGrad)"/>
+  <ellipse cx="200" cy="195" rx="155" ry="65" fill="#ffffff" stroke="#c5a059" stroke-width="3" filter="url(#mcShadow)"/>
+
+  <g filter="url(#mcShadow)" transform="translate(135, 170)">
+    <circle cx="0" cy="0" r="42" fill="url(#cookieGrad)" stroke="#78350f" stroke-width="2.5"/>
+    <circle cx="-15" cy="-15" r="3" fill="#78350f"/>
+    <circle cx="0" cy="-18" r="3" fill="#78350f"/>
+    <circle cx="15" cy="-15" r="3" fill="#78350f"/>
+    <circle cx="-18" cy="0" r="3" fill="#78350f"/>
+    <circle cx="0" cy="0" r="3.5" fill="#78350f"/>
+    <circle cx="18" cy="0" r="3" fill="#78350f"/>
+    <circle cx="-15" cy="15" r="3" fill="#78350f"/>
+    <circle cx="0" cy="18" r="3" fill="#78350f"/>
+    <circle cx="15" cy="15" r="3" fill="#78350f"/>
+  </g>
+
+  <g filter="url(#mcShadow)" transform="translate(265, 170)">
+    <circle cx="0" cy="0" r="42" fill="url(#cookieGrad)" stroke="#78350f" stroke-width="2.5"/>
+    <circle cx="-15" cy="-15" r="3" fill="#78350f"/>
+    <circle cx="0" cy="-18" r="3" fill="#78350f"/>
+    <circle cx="15" cy="-15" r="3" fill="#78350f"/>
+    <circle cx="-18" cy="0" r="3" fill="#78350f"/>
+    <circle cx="0" cy="0" r="3.5" fill="#78350f"/>
+    <circle cx="18" cy="0" r="3" fill="#78350f"/>
+    <circle cx="-15" cy="15" r="3" fill="#78350f"/>
+    <circle cx="0" cy="18" r="3" fill="#78350f"/>
+    <circle cx="15" cy="15" r="3" fill="#78350f"/>
+  </g>
+
+  <g filter="url(#mcShadow)" transform="translate(200, 145)">
+    <circle cx="0" cy="0" r="48" fill="url(#cookieGrad)" stroke="#78350f" stroke-width="3"/>
+    <path d="M-42,-22 Q-48,0 -42,22 Q-32,40 -12,46 Q12,46 32,40 Q46,25 46,0 Q46,-25 32,-40 Q12,-46 -12,-46 Q-32,-40 -42,-22" fill="none" stroke="#92400e" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="-18" cy="-18" r="3" fill="#78350f"/>
+    <circle cx="0" cy="-22" r="3.5" fill="#78350f"/>
+    <circle cx="18" cy="-18" r="3" fill="#78350f"/>
+    <circle cx="-22" cy="0" r="3.5" fill="#78350f"/>
+    <circle cx="0" cy="0" r="4" fill="#78350f"/>
+    <circle cx="22" cy="0" r="3.5" fill="#78350f"/>
+    <circle cx="-18" cy="18" r="3" fill="#78350f"/>
+    <circle cx="0" cy="22" r="3.5" fill="#78350f"/>
+    <circle cx="18" cy="18" r="3" fill="#78350f"/>
+  </g>
+
+  <rect x="24" y="22" rx="8" width="140" height="30" fill="#1b4332"/>
+  <text x="94" y="42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#d4af37" letter-spacing="1">MILK COOKIES</text>
+</svg>

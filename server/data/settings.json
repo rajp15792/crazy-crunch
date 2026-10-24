@@ -1,12 +1,15 @@
 {
   "storeName": "Crazy Crunch",
   "tagline": "Crunch in Every Munch!",
-  "phone": "9876543210",
-  "whatsappNumber": "919876543210",
-  "upiId": "crazycrunch@upi",
-  "minOrderForFreeDelivery": 299,
-  "deliveryCharge": 30,
+  "businessType": "Khari, toast, cookies, farsan, and other food products",
+  "phone": "+91 7507792060",
+  "whatsappNumber": "917507792060",
+  "deliveryArea": "Kolhapur and nearby areas",
+  "deliveryMethod": "Our own delivery service",
+  "deliveryCharge": 0,
+  "minOrderAmount": 0,
+  "paymentMethod": "Cash on Delivery",
   "currency": "₹",
   "ownerUsername": "Swarup",
-  "ownerPassword": "swarup@123"
+  "ownerPassword": "Swarup@123"
 }

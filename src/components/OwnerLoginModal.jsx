@@ -4,8 +4,8 @@ import { Lock, X, AlertCircle, Loader2 } from 'lucide-react';
 export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
   if (!isOpen) return null;
 
-  const [username, setUsername] = useState('Swarup');
-  const [password, setPassword] = useState('swarup@123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -38,17 +38,17 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div className="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl relative border border-orange-100">
+      <div className="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl relative border border-[#c5a059]/30">
         
         {/* Header */}
         <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
           <div className="flex items-center gap-2">
-            <div className="p-2 bg-orange-100 text-orange-700 rounded-xl">
-              <Lock className="w-5 h-5" />
+            <div className="p-2 bg-[#f4ede2] text-[#1b4332] rounded-xl border border-[#c5a059]/30">
+              <Lock className="w-5 h-5 text-[#1b4332]" />
             </div>
             <div>
-              <h3 className="text-base font-bold text-slate-900 leading-tight">Owner Authentication</h3>
-              <p className="text-[11px] text-slate-500">Secure Product & Store Management</p>
+              <h3 className="text-base font-black text-[#0f382c] leading-tight brand-font">Owner Authentication</h3>
+              <p className="text-[11px] text-slate-500">Protected Store Management</p>
             </div>
           </div>
           <button
@@ -68,21 +68,21 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
 
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            <label className="block text-xs font-bold text-[#0f382c] uppercase tracking-wider mb-1">
               Owner ID
             </label>
             <input
               type="text"
               required
-              placeholder="e.g. Swarup"
+              placeholder="Enter Owner ID"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white"
+              className="w-full px-3 py-2 bg-[#fdfbf7] border border-[#c5a059]/30 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1b4332] focus:bg-white"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            <label className="block text-xs font-bold text-[#0f382c] uppercase tracking-wider mb-1">
               Password
             </label>
             <input
@@ -91,22 +91,15 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
               placeholder="Enter owner password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white"
+              className="w-full px-3 py-2 bg-[#fdfbf7] border border-[#c5a059]/30 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1b4332] focus:bg-white"
             />
-          </div>
-
-          {/* Secure Hint */}
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-2.5 text-[11px] text-amber-900">
-            <div className="font-semibold mb-0.5">Secure Owner Access:</div>
-            <div>Owner ID: <code className="font-mono font-bold">Swarup</code></div>
-            <div>Password: <code className="font-mono font-bold">swarup@123</code></div>
           </div>
 
           <div className="pt-2">
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-2.5 px-4 bg-orange-600 hover:bg-orange-700 active:scale-[0.98] disabled:bg-slate-300 text-white rounded-xl font-bold flex items-center justify-center gap-2 text-xs shadow-md shadow-orange-600/20 transition-all"
+              className="w-full py-2.5 px-4 bg-[#1b4332] hover:bg-[#0f382c] active:scale-[0.98] disabled:bg-slate-300 text-[#d4af37] rounded-xl font-bold flex items-center justify-center gap-2 text-xs shadow-md shadow-[#0f382c]/20 transition-all border border-[#d4af37]/40"
             >
               {isLoading ? (
                 <>
@@ -114,7 +107,7 @@ export default function OwnerLoginModal({ isOpen, onClose, onLoginSuccess }) {
                   <span>Verifying...</span>
                 </>
               ) : (
-                <span>Access Owner Panel</span>
+                <span>Access Protected Dashboard</span>
               )}
             </button>
           </div>

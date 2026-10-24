@@ -8,26 +8,47 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
-          800: '#9a3412',
-          900: '#7c2d12',
-          950: '#431407',
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#166534', // Rich Forest Green
+          700: '#14532d', // Deep Emerald
+          800: '#0f382c', // Royal Dark Green
+          900: '#09261d',
+          950: '#041711',
         },
-        amberGold: {
-          DEFAULT: '#D97706',
-          light: '#FBBF24',
-          dark: '#B45309'
+        greenTheme: {
+          dark: '#0f382c',
+          forest: '#1b4332',
+          emerald: '#2d6a4f',
+          light: '#d8f3dc'
+        },
+        gold: {
+          50: '#fdfbf0',
+          100: '#faf5dc',
+          200: '#f4e7b0',
+          300: '#edd680',
+          400: '#e5c07b',
+          500: '#d4af37', // Royal Gold
+          600: '#c5a059', // Brass Gold
+          700: '#996515',
+          800: '#734c11',
+          900: '#54370d'
+        },
+        cream: {
+          50: '#fffdfa',
+          100: '#fdfbf7', // Warm canvas background
+          200: '#f9f6f0',
+          300: '#f4ede2',
+          400: '#e8dcce'
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['Outfit', 'Plus Jakarta Sans', 'sans-serif']
       }
     },
   },

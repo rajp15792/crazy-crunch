@@ -1,13 +1,13 @@
 {
   "name": "Crazy Crunch",
   "short_name": "Crazy Crunch",
-  "description": "Crispy, homemade, high-quality traditional snacks, savouries, and sweets delivered fresh to you.",
+  "description": "Crispy, homemade, high-quality Khari, Toast, Cookies, and Farsan delivered fresh in Kolhapur.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fffdf8",
-  "theme_color": "#ea580c",
+  "background_color": "#fdfbf7",
+  "theme_color": "#0f382c",
   "lang": "en",
   "categories": ["shopping", "food", "lifestyle"],
   "icons": [

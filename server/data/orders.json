@@ -1,5 +1,407 @@
 [
   {
+    "id": "ord-1792830958200",
+    "orderRef": "CC-2026-8336",
+    "customer": {
+      "name": "Suresh More",
+      "phone": "9822012345",
+      "address": "B-102, Shahu Nagar, Kolhapur",
+      "area": "Shahu Nagar",
+      "city": "Kolhapur",
+      "pincode": "416008",
+      "notes": "Call before delivery"
+    },
+    "items": [
+      {
+        "id": "demo-milk-toast",
+        "productId": "demo-milk-toast",
+        "name": "Milk Toast",
+        "unit": "packet",
+        "weight": "250 g",
+        "unitPrice": 35,
+        "price": 35,
+        "quantity": 2,
+        "total": 70,
+        "image": "/images/milk-toast.svg"
+      }
+    ],
+    "subtotal": 70,
+    "deliveryCharge": 0,
+    "grandTotal": 70,
+    "paymentMethod": "Cash on Delivery",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "history": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-24T08:35:58.200Z",
+        "note": "Order placed by customer"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-24T08:35:58.230Z",
+        "note": "Status updated from Pending to Confirmed"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-10-24T08:35:58.236Z",
+        "note": "Status updated from Confirmed to Delivered"
+      },
+      {
+        "status": "Cancelled",
+        "timestamp": "2026-10-24T08:35:58.243Z",
+        "note": "Status updated from Delivered to Cancelled"
+      }
+    ],
+    "createdAt": "2026-10-24T08:35:58.200Z",
+    "updatedAt": "2026-10-24T08:35:58.243Z"
+  },
+  {
+    "id": "ord-1792830957415",
+    "orderRef": "CC-2026-6414",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Rajarampuri",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Deliver after 5 PM"
+    },
+    "items": [
+      {
+        "id": "demo-milk-toast",
+        "productId": "demo-milk-toast",
+        "name": "Milk Toast",
+        "unit": "packet",
+        "weight": "250 g",
+        "unitPrice": 35,
+        "price": 35,
+        "quantity": 2,
+        "total": 70,
+        "image": "/images/milk-toast.svg"
+      }
+    ],
+    "subtotal": 70,
+    "deliveryCharge": 0,
+    "grandTotal": 70,
+    "paymentMethod": "Cash on Delivery",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "history": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-24T08:35:57.416Z",
+        "note": "Order placed by customer"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-24T08:35:57.424Z",
+        "note": "Status updated from Pending to Confirmed"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-10-24T08:35:57.429Z",
+        "note": "Status updated from Confirmed to Delivered"
+      },
+      {
+        "status": "Cancelled",
+        "timestamp": "2026-10-24T08:35:57.433Z",
+        "note": "Status updated from Delivered to Cancelled"
+      }
+    ],
+    "createdAt": "2026-10-24T08:35:57.416Z",
+    "updatedAt": "2026-10-24T08:35:57.433Z"
+  },
+  {
+    "id": "ord-1792828406207",
+    "orderRef": "CC-2026-9021",
+    "customer": {
+      "name": "Rajvardhan Patil",
+      "phone": "9876543210",
+      "address": "Flat 304, Green Heights, Opp. Temple",
+      "area": "Tarabai Park",
+      "city": "Kolhapur",
+      "pincode": "416003",
+      "notes": "Deliver fresh batch in evening please"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Delivered",
+    "createdAt": "2026-10-24T07:53:26.207Z",
+    "updatedAt": "2026-10-24T07:53:26.251Z"
+  },
+  {
+    "id": "ord-1792828400448",
+    "orderRef": "CC-2026-7533",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Shivaji Nagar",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Please deliver after 6 PM"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "createdAt": "2026-10-24T07:53:20.448Z",
+    "updatedAt": "2026-10-24T07:53:20.479Z"
+  },
+  {
+    "id": "ord-1792813453874",
+    "orderRef": "CC-2026-5149",
+    "customer": {
+      "name": "Rajvardhan Patil",
+      "phone": "9876543210",
+      "address": "Flat 304, Green Heights, Opp. Temple",
+      "area": "Tarabai Park",
+      "city": "Kolhapur",
+      "pincode": "416003",
+      "notes": "Deliver fresh batch in evening please"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Delivered",
+    "createdAt": "2026-10-24T03:44:13.874Z",
+    "updatedAt": "2026-10-24T03:44:13.905Z"
+  },
+  {
+    "id": "ord-1792813453439",
+    "orderRef": "CC-2026-2696",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Shivaji Nagar",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Please deliver after 6 PM"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "createdAt": "2026-10-24T03:44:13.439Z",
+    "updatedAt": "2026-10-24T03:44:13.466Z"
+  },
+  {
+    "id": "ord-1792812832557",
+    "orderRef": "CC-2026-3731",
+    "customer": {
+      "name": "Rajvardhan Patil",
+      "phone": "9876543210",
+      "address": "Flat 304, Green Heights, Opp. Temple",
+      "area": "Tarabai Park",
+      "city": "Kolhapur",
+      "pincode": "416003",
+      "notes": "Deliver fresh batch in evening please"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Delivered",
+    "createdAt": "2026-10-24T03:33:52.557Z",
+    "updatedAt": "2026-10-24T03:33:52.588Z"
+  },
+  {
+    "id": "ord-1792812747464",
+    "orderRef": "CC-2026-2973",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Shivaji Nagar",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Please deliver after 6 PM"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "createdAt": "2026-10-24T03:32:27.464Z",
+    "updatedAt": "2026-10-24T03:32:27.482Z"
+  },
+  {
+    "id": "ord-1792787856712",
+    "orderRef": "CC-2026-3414",
+    "customer": {
+      "name": "Rajvardhan Patil",
+      "phone": "9876543210",
+      "address": "Flat 304, Green Heights, Opp. Temple",
+      "area": "Tarabai Park",
+      "city": "Kolhapur",
+      "pincode": "416003",
+      "notes": "Deliver fresh batch in evening please"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Delivered",
+    "createdAt": "2026-10-23T20:37:36.712Z",
+    "updatedAt": "2026-10-23T20:37:36.751Z"
+  },
+  {
+    "id": "ord-1792787728716",
+    "orderRef": "CC-2026-7272",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Shivaji Nagar",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Please deliver after 6 PM"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "createdAt": "2026-10-23T20:35:28.716Z",
+    "updatedAt": "2026-10-23T20:35:28.738Z"
+  },
+  {
+    "id": "ord-1792787705173",
+    "orderRef": "CC-2026-9530",
+    "customer": {
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "address": "Flat 402, Sai Residency, Station Road",
+      "area": "Shivaji Nagar",
+      "city": "Kolhapur",
+      "pincode": "416001",
+      "notes": "Please deliver after 6 PM"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Chakli",
+        "price": 60,
+        "weight": "200 g",
+        "quantity": 2,
+        "total": 120,
+        "image": "/images/chakli.svg"
+      }
+    ],
+    "subtotal": 120,
+    "deliveryCharge": 30,
+    "grandTotal": 150,
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending (Cash on Delivery)",
+    "status": "Cancelled",
+    "createdAt": "2026-10-23T20:35:05.173Z",
+    "updatedAt": "2026-10-23T20:35:05.198Z"
+  },
+  {
     "id": "ord-1792784372903",
     "orderRef": "CC-2026-1940",
     "customer": {

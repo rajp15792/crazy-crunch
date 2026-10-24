@@ -1,0 +1,61 @@
+================================================================================
+🍟 CRAZY CRUNCH — CUSTOMER APP INSTALLATION GUIDE 🍟
+Crunch in Every Munch! Homemade Festive Snacks & Savouries
+================================================================================
+
+Welcome to Crazy Crunch! You can install our application directly onto your
+Android phone, iPhone, or Computer in under 30 seconds — 100% Free, with
+NO Google Play Store login or download wait times.
+
+--------------------------------------------------------------------------------
+📱 1. HOW TO INSTALL ON ANDROID PHONES (CHROME / BRAVE / SAMSUNG INTERNET)
+--------------------------------------------------------------------------------
+Step 1: Open Google Chrome on your Android smartphone.
+Step 2: Navigate to our official Crazy Crunch link:
+        http://<YOUR_SERVER_IP>:3001   (or your live HTTPS web URL)
+
+Step 3: Look for the banner at the bottom or top that says:
+        "Install Crazy Crunch" or "Add to Home screen".
+        Tap the "Install" or "Install App" button.
+
+Step 4: If you do not see the banner automatically:
+        a) Tap the 3 dots (⋮) in the top-right corner of Google Chrome.
+        b) Tap "Install app" or "Add to Home screen".
+        c) Tap "Install" to confirm.
+
+Step 5: The "Crazy Crunch" app icon will now appear on your phone's home screen
+        and app drawer, exactly like any regular app! You can launch it in
+        full-screen mode anytime with one tap.
+
+--------------------------------------------------------------------------------
+🍏 2. HOW TO INSTALL ON APPLE iPHONE (SAFARI BROWSER)
+--------------------------------------------------------------------------------
+Step 1: Open Apple Safari on your iPhone.
+Step 2: Go to the Crazy Crunch link.
+Step 3: Tap the "Share" button at the bottom of the screen (the square icon
+        with an arrow pointing up ⎋).
+Step 4: Scroll down and tap "Add to Home Screen" (➕).
+Step 5: Tap "Add" in the top-right corner.
+Step 6: The Crazy Crunch app icon is now saved on your iPhone Home Screen!
+
+--------------------------------------------------------------------------------
+💻 3. HOW TO INSTALL ON LAPTOP / DESKTOP (WINDOWS & MAC)
+--------------------------------------------------------------------------------
+Step 1: Open Google Chrome or Microsoft Edge.
+Step 2: Go to the Crazy Crunch link.
+Step 3: Click the small "Install" icon (🖥️ or ⊕) in the browser address bar.
+Step 4: Click "Install" to create a desktop app window.
+
+--------------------------------------------------------------------------------
+🛒 HOW TO PLACE AN ORDER
+--------------------------------------------------------------------------------
+1. Browse freshly prepared homemade snacks (Chakli, Sev, Khari, Laddus, etc.).
+2. Select your quantity and click "Add to Cart" or "Buy Now".
+3. Tap the Cart icon and click "Proceed to Checkout".
+4. Enter your Name, Phone Number, Delivery Address, Area, City, and PIN code.
+5. Choose Cash on Delivery (COD) or instant Scan & Pay via UPI.
+6. Click "Confirm Order". You will receive an instant order confirmation
+   with your unique Order Reference ID (e.g., CC-2026-XXXX).
+
+Need Help? Contact our customer support via WhatsApp at +91 98765 43210.
+================================================================================

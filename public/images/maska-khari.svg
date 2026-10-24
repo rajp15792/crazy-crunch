@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="mkPlateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="70%" stop-color="#fef8ea"/>
+      <stop offset="100%" stop-color="#f5e6c8"/>
+    </radialGradient>
+    <linearGradient id="mkPuffGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="65%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="butterGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <filter id="mkShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#451a03" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#mkPlateGrad)"/>
+  <ellipse cx="200" cy="190" rx="155" ry="70" fill="#ffffff" stroke="#e5c07b" stroke-width="3" filter="url(#mkShadow)"/>
+
+  <g filter="url(#mkShadow)" transform="translate(130, 160) rotate(-12)">
+    <rect x="-40" y="-24" width="80" height="48" rx="8" fill="url(#mkPuffGrad)" stroke="#78350f" stroke-width="2.5"/>
+    <line x1="-34" y1="-12" x2="34" y2="-12" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-36" y1="0" x2="36" y2="0" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-34" y1="12" x2="34" y2="12" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#mkShadow)" transform="translate(270, 165) rotate(14)">
+    <rect x="-40" y="-24" width="80" height="48" rx="8" fill="url(#mkPuffGrad)" stroke="#78350f" stroke-width="2.5"/>
+    <line x1="-34" y1="-12" x2="34" y2="-12" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-36" y1="0" x2="36" y2="0" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-34" y1="12" x2="34" y2="12" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#mkShadow)" transform="translate(200, 145)">
+    <rect x="-48" y="-30" width="96" height="60" rx="10" fill="url(#mkPuffGrad)" stroke="#78350f" stroke-width="3"/>
+    <line x1="-42" y1="-16" x2="42" y2="-16" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-44" y1="-4" x2="44" y2="-4" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-44" y1="8" x2="44" y2="8" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-40" y1="18" x2="40" y2="18" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <path d="M-30,-22 Q0,-26 30,-22" stroke="url(#butterGlow)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9"/>
+    
+    <ellipse cx="-20" cy="-20" rx="4" ry="1.5" transform="rotate(30 -20 -20)" fill="#451a03"/>
+    <ellipse cx="18" cy="-20" rx="4" ry="1.5" transform="rotate(-25 18 -20)" fill="#451a03"/>
+    <ellipse cx="0" cy="-8" rx="4" ry="1.5" transform="rotate(15 0 -8)" fill="#451a03"/>
+    <ellipse cx="-15" cy="4" rx="3.5" ry="1.4" transform="rotate(-40 -15 4)" fill="#451a03"/>
+    <ellipse cx="22" cy="4" rx="3.5" ry="1.4" transform="rotate(20 22 4)" fill="#451a03"/>
+  </g>
+
+  <rect x="24" y="22" rx="8" width="135" height="30" fill="#1b4332"/>
+  <text x="91" y="42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#d4af37" letter-spacing="1">MASKA KHARI</text>
+</svg>
