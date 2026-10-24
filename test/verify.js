@@ -20,6 +20,7 @@ async function runTests() {
 
   // 1. Verify 4 Demo Products with Dual Selling Units (Section 3 & 7)
   console.log('--- Test Suite 1: 4 Dual-Unit Demo Products & Specifications ---');
+  db.resetDemoCatalogue();
   const products = db.getProducts(true);
   assert(products.length >= 4, `Expected at least 4 demo products, found ${products.length}`);
 
